@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="백엔드와 AI 서비스를 연결하는 개발자 도건우의 포트폴리오 웹사이트"
+    />
+    <title>Do Geonwoo | Backend & AI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-meter" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Do Geonwoo home">
+        <span>D</span>
+        <span>G</span>
+      </a>
+      <nav class="nav-links" aria-label="주요 섹션">
+        <a href="#about">소개</a>
+        <a href="#work">프로젝트</a>
+        <a href="#stack">기술</a>
+        <a href="#contact">연락</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Backend Developer · AI Service Builder</p>
+            <h1>서비스의 뼈대를 단단하게 만들고, AI 기능을 현실의 흐름에 붙입니다.</h1>
+            <p class="hero-text">
+              Java와 Spring Boot를 중심으로 REST API, 인증, 데이터 모델링, 배포 자동화를 다룹니다.
+              OCR, Document AI, 얼굴 인식처럼 사용자의 문제를 직접 줄이는 기능을 백엔드와 연결하는 데 관심이 많습니다.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#work">프로젝트 보기</a>
+              <a class="button ghost" href="assets/geonwoo-do-portfolio.pdf" download>PDF 다운로드</a>
+            </div>
+          </div>
+
+          <div class="hero-panel reveal" aria-label="포트폴리오 핵심 정보">
+            <div class="logo-strip" aria-hidden="true">
+              <span class="teal">H</span>
+              <span class="teal">Y</span>
+              <span class="teal">U</span>
+              <span class="teal">N</span>
+              <span class="dark">D</span>
+              <span class="gold">A</span>
+              <span class="gold">I</span>
+            </div>
+            <div class="profile-card">
+              <p class="profile-label">Do Geonwoo</p>
+              <h2>도건우</h2>
+              <p>문제를 API, 데이터, 배포 흐름으로 쪼개고 끝까지 굴러가는 형태로 만드는 개발자.</p>
+            </div>
+            <div class="signal-grid">
+              <div>
+                <strong>Spring Boot</strong>
+                <span>REST API · Security · JPA</span>
+              </div>
+              <div>
+                <strong>Cloud</strong>
+                <span>AWS EC2 · Nginx · Docker</span>
+              </div>
+              <div>
+                <strong>AI</strong>
+                <span>OCR · LayoutLM · MediaPipe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>빠르게 만들되, 운영까지 생각합니다.</h2>
+        </div>
+        <div class="about-layout">
+          <article class="about-copy reveal">
+            <p>
+              저는 백엔드 구조를 먼저 안정적으로 세우고, 사용자가 실제로 체감하는 기능을 서비스 안으로 끌어오는 일에 흥미를 느낍니다. 인증, 데이터 흐름,
+              파일 처리, 외부 AI API, 배포 파이프라인처럼 서로 다른 요소가 하나의 서비스로 이어지는 지점을 좋아합니다.
+            </p>
+            <p>
+              프로젝트에서는 Spring Security와 JWT 기반 인증, Docker Compose 환경 구성, GitHub Actions를 활용한 CI/CD, Nginx Reverse Proxy와 HTTPS 설정까지
+              서비스가 계속 개선될 수 있는 기반을 경험했습니다.
+            </p>
+          </article>
+          <div class="stats reveal" aria-label="핵심 역량 요약">
+            <div><strong>4+</strong><span>주요 프로젝트</span></div>
+            <div><strong>2001</strong><span>끈기 있게 성장 중</span></div>
+            <div><strong>Full</strong><span>API부터 배포까지</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>기술을 결과물로 밀어붙인 프로젝트들</h2>
+        </div>
+
+        <div class="filter-bar reveal" role="group" aria-label="프로젝트 필터">
+          <button class="filter active" type="button" data-filter="all">전체</button>
+          <button class="filter" type="button" data-filter="backend">백엔드</button>
+          <button class="filter" type="button" data-filter="ai">AI</button>
+          <button class="filter" type="button" data-filter="infra">인프라</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-tags="backend infra">
+            <div class="project-index">01</div>
+            <h3>Spring Boot 기반 서비스 API</h3>
+            <p>
+              JWT와 Spring Security로 stateless 인증을 구성하고, JPA와 MySQL 기반 데이터 흐름을 설계했습니다.
+            </p>
+            <ul>
+              <li>REST API 설계</li>
+              <li>Spring Security · JWT</li>
+              <li>JPA · MySQL</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="backend infra">
+            <div class="project-index">02</div>
+            <h3>EC2 배포 자동화와 HTTPS 운영</h3>
+            <p>
+              Docker Compose로 실행 환경을 묶고 GitHub Actions, AWS EC2, Nginx Reverse Proxy로 배포 경로를 정리했습니다.
+            </p>
+            <ul>
+              <li>Docker · GitHub Actions</li>
+              <li>AWS EC2 · Nginx</li>
+              <li>Reverse Proxy · HTTPS</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai backend">
+            <div class="project-index">03</div>
+            <h3>OCR & Document AI</h3>
+            <p>
+              Clova OCR과 LayoutLM을 활용해 문서에서 의미 있는 값을 추출하고, Spring Boot와 Flask 서비스로 연결했습니다.
+            </p>
+            <ul>
+              <li>Clova OCR</li>
+              <li>LayoutLM · Flask</li>
+              <li>Spring Boot 연동</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai backend">
+            <div class="project-index">04</div>
+            <h3>FaceMesh 기반 사용자 상태 분석</h3>
+            <p>
+              OpenCV와 MediaPipe FaceMesh로 얼굴 랜드마크와 blink count를 분석하고, AI 서버 결과를 백엔드 API로 제공했습니다.
+            </p>
+            <ul>
+              <li>OpenCV · MediaPipe</li>
+              <li>EAR 계산</li>
+              <li>Flask AI Server</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack" id="stack">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Stack</p>
+          <h2>익숙한 도구로 안정적인 흐름을 만듭니다.</h2>
+        </div>
+        <div class="stack-cloud reveal">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>Spring Security</span>
+          <span>JPA</span>
+          <span>MySQL</span>
+          <span>Python</span>
+          <span>Flask</span>
+          <span>Docker</span>
+          <span>AWS EC2</span>
+          <span>Nginx</span>
+          <span>GitHub Actions</span>
+          <span>OpenCV</span>
+          <span>MediaPipe</span>
+          <span>LayoutLM</span>
+          <span>Clova OCR</span>
+        </div>
+      </section>
+
+      <section class="section portfolio-preview" aria-label="포트폴리오 원본">
+        <div class="preview-copy reveal">
+          <p class="eyebrow">Original Portfolio</p>
+          <h2>PDF의 프로젝트 맥락을 웹에서 다시 읽기 쉽게 정리했습니다.</h2>
+          <a class="button primary" href="assets/geonwoo-do-portfolio.pdf" target="_blank" rel="noreferrer">원본 열기</a>
+        </div>
+        <img class="preview-image reveal" src="assets/portfolio-cover.png" alt="도건우 포트폴리오 PDF 표지" />
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-inner reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>함께 만들 서비스가 있다면 언제든 연결해 주세요.</h2>
+          <div class="contact-links">
+            <a href="mailto:ad4086@naver.com">ad4086@naver.com</a>
+            <a href="https://github.com/woodgeon" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://velog.io/@woodgeon" target="_blank" rel="noreferrer">Velog</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="to-top" type="button" aria-label="맨 위로 이동">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>
